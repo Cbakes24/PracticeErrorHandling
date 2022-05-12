@@ -43,3 +43,13 @@ function greet(greeting) {
 
   console.log(greeting);
 }
+
+try{
+greet(4)
+greet('')
+greet(null)
+greet(0)
+greet(undefined)
+} catch (error) {
+  console.error(`${error.name}: ${error.message}`)
+}
