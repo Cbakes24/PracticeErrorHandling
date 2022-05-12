@@ -1,27 +1,39 @@
 // 1.
 function sum(array) {
-  if (!array) {
-    throw new TypeError("This is not an array");
-  } else {
-    let sum = 0;
+  let sum = 0;
+  try {
     for (let i = 0; i < array.length; i++) {
       sum += array[i];
     }
-    return sum;
+  } catch (error) {
+    console.log('error', error);
   }
-}
 
-let res = sum(null);
-
-try {
-  console.log(res);
-} catch (error) {
-  if (error instanceof TypeError) {
-    console.error(`${error.name}: ${error.message}`);
-  } else {
-    console.error("hi");
-  }
+  return sum;
 }
+// function sum(array) {
+//   if (!array) {
+//     throw new TypeError("This is not an array");
+//   } else {
+//     let sum = 0;
+//     for (let i = 0; i < array.length; i++) {
+//       sum += array[i];
+//     }
+//     return sum;
+//   }
+// }
+
+// let res = sum(null);
+
+// try {
+//   console.log(res);
+// } catch (error) {
+//   if (error instanceof TypeError) {
+//     console.error(`${error.name}: ${error.message}`);
+//   } else {
+//     console.error("hi");
+//   }
+// }
 
 // 2.
 // tests
