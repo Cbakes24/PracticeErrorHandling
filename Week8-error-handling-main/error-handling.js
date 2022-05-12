@@ -1,20 +1,39 @@
-// 1.
-function sum(array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-  }
-  return sum;
-}
+// // 1.
+// function sum(array) {
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   return sum;
+// }
 
-let res = sum(null);
-console.log(res);
+// let res = sum(null);
+
+// try{
+// console.log(res);
+// } catch (error) {
+//   console.error(`${error.name}: this is a type error`)
+// }
+
+
 
 // 2.
 // tests
-sayName("Alex");
-sayName(1);
-// Your code here
+// const sayName = name => {
+//  if(typeof name !== 'string'){
+//   throw new Error("Invalid name! Must be a string!");
+//  } else {
+//    console.log(name)
+//  }
+// }
+
+// try{
+// sayName("Alex");
+// sayName(1);
+// } catch(error) {
+//   console.error(error.name + ": " + error.message);
+// }
+
 
 // 3.
 function greet(greeting) {
